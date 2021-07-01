@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Html Test</title>
+<meta name="author" content="(Moritz Schwerer)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Html Test</h1><h2 class="author">Moritz Schwerer</h2><p class="date">Created: 2021-07-01 Do 21:52</p>
+</section>
+<section id="table-of-contents"><div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org6f5cefe">Python</a>
+<ul>
+<li><a href="#/slide-orgc0c0caf">Imports</a></li>
+<li><a href="#/slide-org3b2ad25">Math</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org1e49955">Latex</a>
+<ul>
+<li><a href="#/slide-orgdd638d3">Formular</a></li>
+<li><a href="#/slide-orgf846055">Cost</a></li>
+<li><a href="#/slide-orgf2ab606">temp</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org6f5cefe">
+<h2 id="org6f5cefe">Python</h2>
+<div class="outline-text-2" id="text-org6f5cefe">
+</div>
+</section>
+<section id="slide-orgc0c0caf">
+<h3 id="orgc0c0caf">Imports</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python" ><code trim><span style="color: #51afef;">import</span> numpy
+<span style="color: #51afef;">import</span> some_package
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org3b2ad25">
+<h3 id="org3b2ad25">Math</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python" ><code trim><span style="color: #dcaeea;">a</span> = <span style="color: #da8548; font-weight: bold;">5</span>
+<span style="color: #dcaeea;">b</span> = <span style="color: #da8548; font-weight: bold;">10</span>
+<span style="color: #dcaeea;">c</span> = a + b <span style="color: #5B6268;"># </span><span style="color: #5B6268;">c=15</span>
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org1e49955">
+<h2 id="org1e49955">Latex</h2>
+<div class="outline-text-2" id="text-org1e49955">
+</div>
+</section>
+<section id="slide-orgdd638d3">
+<h3 id="orgdd638d3">Formular</h3>
+<p>
+\[y_{hat} = \theta_0 * x_0 + \theta_1 * x_1 ... + \theta_n * x_n\]
+\[y_{hat} = \theta^TX\]
+</p>
+
+<p>
+\(\theta\) = [0.8, 2.25, 1.5, 2.2, 3]
+X = [1, 5, 0.5, 3.5, 2]
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">0.5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">3.5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+<section id="slide-orgf846055">
+<h3 id="orgf846055">Cost</h3>
+<p>
+\[J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (y_i - yhat_i)^2\]
+m = number of training examples
+</p>
+
+</section>
+<section id="slide-orgf2ab606">
+<h3 id="orgf2ab606">temp</h3>
+<p>
+\[ \theta_0 = -\alpha * J(\theta_0) \]
+\[ J(\theta_0) = \sum_{n=0}^{m} (y_i - yhat_i) * x_i \]
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown,RevealZoom,RevealNotes],
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+});
+
+
+</script>
+</body>
+</html>
