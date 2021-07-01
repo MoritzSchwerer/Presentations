@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Linear Regression</title>
+<meta name="author" content="(Moritz Schwerer)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:./dist/reveal.css"/>
+
+<link rel="stylesheet" href="file:./dist/theme/moon.css" id="theme"/>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Linear Regression</h1><h2 class="author">Moritz Schwerer</h2><p class="date">Created: 2021-07-01 Do 20:46</p>
+</section>
+
+
+
+<section>
+<section id="slide-orgd5dd100">
+<h2 id="orgd5dd100">One variable</h2>
+<div class="outline-text-2" id="text-orgd5dd100">
+</div>
+</section>
+<section id="slide-orge51d55d">
+<h3 id="orge51d55d">Prediction</h3>
+<p>
+\[y_{pred} = 2 + 2.5x\]
+\[y_{pred} = a + bx\]
+</p>
+
+</section>
+<section id="slide-orge51d55d-split">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">i</th>
+<th scope="col" class="org-left">size</th>
+<th scope="col" class="org-right">y<sub>pred</sub></th>
+<th scope="col" class="org-right">y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">100m<sup>2</sup></td>
+<td class="org-right">300</td>
+<td class="org-right">280</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">200m<sup>2</sup></td>
+<td class="org-right">700</td>
+<td class="org-right">640</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">300m<sup>2</sup></td>
+<td class="org-right">1,100</td>
+<td class="org-right">1,000</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+<section id="slide-orgedd8013">
+<h3 id="orgedd8013">Cost</h3>
+<p>
+\[J(\theta) = \frac{1}{m}\sum_{n=1}^{m}(y - y_{pred})^2\]
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc07b473">
+<h2 id="orgc07b473">Multiple variables</h2>
+<div class="outline-text-2" id="text-orgc07b473">
+</div>
+</section>
+<section id="slide-orgd4da65a">
+<h3 id="orgd4da65a">Prediction</h3>
+<p>
+\[y_{pred} = \theta_0x_0 + \theta_1x_1 + \theta_2x_2 + \theta_nx_n\]
+or
+\[y_{pred} = \theta^T x\]
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="file:./dist/reveal.js"></script>
+<script src="file:./plugin/markdown/markdown.js"></script>
+<script src="file:./plugin/zoom/zoom.js"></script>
+<script src="file:./plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown,RevealZoom,RevealNotes],
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+});
+
+
+</script>
+</body>
+</html>
