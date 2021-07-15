@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
 
+<link rel="stylesheet" href="test.css"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -27,37 +28,30 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Html Test</h1><h2 class="author">Moritz Schwerer</h2><p class="date">Created: 2021-07-15 Do 16:25</p>
+<section id="sec-title-slide"><h1 class="title">Html Test</h1><h2 class="author">Moritz Schwerer</h2><p class="date">Created: 2021-07-03 Sa 11:33</p>
 </section>
 <section id="table-of-contents"><div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgff64f09">Python</a>
+<li><a href="#/slide-orgfd00d5a">Python</a>
 <ul>
-<li><a href="#/slide-org1453adf">Imports</a></li>
-<li><a href="#/slide-org2708b75">Math</a></li>
-<li><a href="#/slide-orgfecc5d8">Loops</a></li>
+<li><a href="#/slide-orgceb2db7">Imports</a></li>
+<li><a href="#/slide-orged31cd5">Math</a></li>
+<li><a href="#/slide-orgfb80495">Loops</a></li>
 </ul>
 </li>
-<li><a href="#/slide-orge6cf679">Latex</a>
+<li><a href="#/slide-org99e5b1a">Latex</a>
 <ul>
-<li><a href="#/slide-org5a212e9">Formular</a></li>
-<li><a href="#/slide-org97c0c2b">Cost</a></li>
-<li><a href="#/slide-orgbff0d18">Vector</a></li>
-<li><a href="#/slide-org6a007dd">Matrix (Latex)</a></li>
+<li><a href="#/slide-org0f92748">Formular</a></li>
+<li><a href="#/slide-org7ba449c">Cost</a></li>
+<li><a href="#/slide-orgb082bcd">Vector</a></li>
+<li><a href="#/slide-org620261b">Matrix</a></li>
 </ul>
 </li>
-<li><a href="#/slide-org9bce3f9">Image test</a>
+<li><a href="#/slide-orgd4ab28f">Image test</a>
 <ul>
-<li><a href="#/slide-org6231d5e">svg</a></li>
-</ul>
-</li>
-<li><a href="#/slide-org0cb4ff1">chartjs</a>
-<ul>
-<li><a href="#/slide-org3ef8461">Line chart</a></li>
-<li><a href="#/slide-org32da9ba">Scatterplot</a></li>
-<li><a href="#/slide-org16ad7cc">Line/Scatter-plot</a></li>
+<li><a href="#/slide-orgc3bda80">svg</a></li>
 </ul>
 </li>
 </ul>
@@ -66,13 +60,13 @@
 </section>
 
 <section>
-<section id="slide-orgff64f09">
-<h2 id="orgff64f09">Python</h2>
-<div class="outline-text-2" id="text-orgff64f09">
+<section id="slide-orgfd00d5a">
+<h2 id="orgfd00d5a">Python</h2>
+<div class="outline-text-2" id="text-orgfd00d5a">
 </div>
 </section>
-<section id="slide-org1453adf">
-<h3 id="org1453adf">Imports</h3>
+<section id="slide-orgceb2db7">
+<h3 id="orgceb2db7">Imports</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python" ><code trim><span style="color: #51afef;">import</span> numpy
@@ -81,8 +75,8 @@
 </div>
 
 </section>
-<section id="slide-org2708b75">
-<h3 id="org2708b75">Math</h3>
+<section id="slide-orged31cd5">
+<h3 id="orged31cd5">Math</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python" ><code trim><span style="color: #dcaeea;">a</span> = <span style="color: #da8548; font-weight: bold;">5</span>
@@ -91,8 +85,8 @@
 </code></pre>
 </div>
 </section>
-<section id="slide-orgfecc5d8">
-<h3 id="orgfecc5d8">Loops</h3>
+<section id="slide-orgfb80495">
+<h3 id="orgfb80495">Loops</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python" ><code trim><span style="color: #dcaeea;">numbers</span> = <span style="color: #51afef;">[]</span>
@@ -105,29 +99,29 @@
 </section>
 </section>
 <section>
-<section id="slide-orge6cf679">
-<h2 id="orge6cf679">Latex</h2>
-<div class="outline-text-2" id="text-orge6cf679">
+<section id="slide-org99e5b1a">
+<h2 id="org99e5b1a">Latex</h2>
+<div class="outline-text-2" id="text-org99e5b1a">
 </div>
 </section>
-<section id="slide-org5a212e9">
-<h3 id="org5a212e9">Formular</h3>
+<section id="slide-org0f92748">
+<h3 id="org0f92748">Formular</h3>
 <p>
 \[y_{hat} = \theta_0 * x_0 + \theta_1 * x_1 ... + \theta_n * x_n\]
 \[y_{hat} = \theta^TX\]
 </p>
 
 </section>
-<section id="slide-org97c0c2b">
-<h3 id="org97c0c2b">Cost</h3>
+<section id="slide-org7ba449c">
+<h3 id="org7ba449c">Cost</h3>
 <p>
 \[J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (y_i - yhat_i)^2\]
 m = number of training examples
 </p>
 
 </section>
-<section id="slide-orgbff0d18">
-<h3 id="orgbff0d18">Vector</h3>
+<section id="slide-orgb082bcd">
+<h3 id="orgb082bcd">Vector</h3>
 <p>
 \[\begin{bmatrix}
 1 \\
@@ -138,12 +132,12 @@ m = number of training examples
 </p>
 
 </section>
-<section id="slide-org6a007dd">
-<h3 id="org6a007dd">Matrix (Latex)</h3>
+<section id="slide-org620261b">
+<h3 id="org620261b">Matrix</h3>
 <p>
 \[\begin{bmatrix}
 1 & 2 & 9 & 10 & 7 \\
-4 & 3 & 7 & 5 \\
+4 & 3 & 7 & 5  & 9 \\
 5 & 5 & 9 & 11 & 8 \\
 2 & 1 & 1 & 3  & 3 \\
 \end{bmatrix}\]
@@ -152,40 +146,17 @@ m = number of training examples
 </section>
 </section>
 <section>
-<section id="slide-org9bce3f9">
-<h2 id="org9bce3f9">Image test</h2>
-<div class="outline-text-2" id="text-org9bce3f9">
+<section id="slide-orgd4ab28f">
+<h2 id="orgd4ab28f">Image test</h2>
+<div class="outline-text-2" id="text-orgd4ab28f">
 </div>
 </section>
-<section id="slide-org6231d5e">
-<h3 id="org6231d5e">svg</h3>
-<img src="./first_test.svg" class="column" style="float:left; width: 45%">
-<img src="./first_test.svg" class="column" style="float:right; width: 45%">
-
-</section>
-</section>
-<section>
-<section id="slide-org0cb4ff1">
-<h2 id="org0cb4ff1">chartjs</h2>
-<div class="outline-text-2" id="text-org0cb4ff1">
-</div>
-</section>
-<section id="slide-org3ef8461">
-<h3 id="org3ef8461">Line chart</h3>
-<canvas id="line"></canvas>
-
-</section>
-<section id="slide-org32da9ba">
-<h3 id="org32da9ba">Scatterplot</h3>
-<canvas id="scatter"></canvas>
-
-</section>
-<section id="slide-org16ad7cc">
-<h3 id="org16ad7cc">Line/Scatter-plot</h3>
-<canvas id="line-scatter"></canvas>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="./test.js"></script>
+<section id="slide-orgc3bda80">
+<h3 id="orgc3bda80">svg</h3>
+<img src="./first_test.svg" class="column" style="float:left; width: 35%">
+<img src="./first_test.svg" class="column" style="float:right; width: 35%">
+<img src="./first_test.svg" class="column" style="float:left; width: 35%">
+<img src="./first_test.svg" class="column" style="float:right; width: 35%">
 </section>
 </section>
 </div>
@@ -196,7 +167,6 @@ m = number of training examples
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
-center:false,
 multiplex: {
     secret: '', // null if client
     id: '', // id, obtained from socket.io server
