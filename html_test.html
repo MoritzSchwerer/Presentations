@@ -11,7 +11,6 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
 
-<link rel="stylesheet" href="test.css"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -28,30 +27,37 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Html Test</h1><h2 class="author">Moritz Schwerer</h2><p class="date">Created: 2021-07-03 Sa 11:33</p>
+<section id="sec-title-slide"><h1 class="title">Html Test</h1><h2 class="author">Moritz Schwerer</h2><p class="date">Created: 2021-07-15 Do 16:48</p>
 </section>
 <section id="table-of-contents"><div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgfd00d5a">Python</a>
+<li><a href="#/slide-org95ce61f">Python</a>
 <ul>
-<li><a href="#/slide-orgceb2db7">Imports</a></li>
-<li><a href="#/slide-orged31cd5">Math</a></li>
-<li><a href="#/slide-orgfb80495">Loops</a></li>
+<li><a href="#/slide-org9c194a4">Imports</a></li>
+<li><a href="#/slide-org215df85">Math</a></li>
+<li><a href="#/slide-org9f80076">Loops</a></li>
 </ul>
 </li>
-<li><a href="#/slide-org99e5b1a">Latex</a>
+<li><a href="#/slide-org976e54c">Latex</a>
 <ul>
-<li><a href="#/slide-org0f92748">Formular</a></li>
-<li><a href="#/slide-org7ba449c">Cost</a></li>
-<li><a href="#/slide-orgb082bcd">Vector</a></li>
-<li><a href="#/slide-org620261b">Matrix</a></li>
+<li><a href="#/slide-orga3fad27">Formular</a></li>
+<li><a href="#/slide-org3388059">Cost</a></li>
+<li><a href="#/slide-orgb7d7a37">Vector</a></li>
+<li><a href="#/slide-orgf91ce40">Matrix (Latex)</a></li>
 </ul>
 </li>
-<li><a href="#/slide-orgd4ab28f">Image test</a>
+<li><a href="#/slide-org4e64c83">Image test</a>
 <ul>
-<li><a href="#/slide-orgc3bda80">svg</a></li>
+<li><a href="#/slide-org4bcfc25">svg</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgf05d9ba">chartjs</a>
+<ul>
+<li><a href="#/slide-org947c705">Line chart</a></li>
+<li><a href="#/slide-orgf5b0f73">Scatterplot</a></li>
+<li><a href="#/slide-org8a9e0e9">Line/Scatter-plot</a></li>
 </ul>
 </li>
 </ul>
@@ -60,13 +66,13 @@
 </section>
 
 <section>
-<section id="slide-orgfd00d5a">
-<h2 id="orgfd00d5a">Python</h2>
-<div class="outline-text-2" id="text-orgfd00d5a">
+<section id="slide-org95ce61f">
+<h2 id="org95ce61f">Python</h2>
+<div class="outline-text-2" id="text-org95ce61f">
 </div>
 </section>
-<section id="slide-orgceb2db7">
-<h3 id="orgceb2db7">Imports</h3>
+<section id="slide-org9c194a4">
+<h3 id="org9c194a4">Imports</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python" ><code trim><span style="color: #51afef;">import</span> numpy
@@ -75,8 +81,8 @@
 </div>
 
 </section>
-<section id="slide-orged31cd5">
-<h3 id="orged31cd5">Math</h3>
+<section id="slide-org215df85">
+<h3 id="org215df85">Math</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python" ><code trim><span style="color: #dcaeea;">a</span> = <span style="color: #da8548; font-weight: bold;">5</span>
@@ -85,8 +91,8 @@
 </code></pre>
 </div>
 </section>
-<section id="slide-orgfb80495">
-<h3 id="orgfb80495">Loops</h3>
+<section id="slide-org9f80076">
+<h3 id="org9f80076">Loops</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python" ><code trim><span style="color: #dcaeea;">numbers</span> = <span style="color: #51afef;">[]</span>
@@ -99,29 +105,29 @@
 </section>
 </section>
 <section>
-<section id="slide-org99e5b1a">
-<h2 id="org99e5b1a">Latex</h2>
-<div class="outline-text-2" id="text-org99e5b1a">
+<section id="slide-org976e54c">
+<h2 id="org976e54c">Latex</h2>
+<div class="outline-text-2" id="text-org976e54c">
 </div>
 </section>
-<section id="slide-org0f92748">
-<h3 id="org0f92748">Formular</h3>
+<section id="slide-orga3fad27">
+<h3 id="orga3fad27">Formular</h3>
 <p>
 \[y_{hat} = \theta_0 * x_0 + \theta_1 * x_1 ... + \theta_n * x_n\]
 \[y_{hat} = \theta^TX\]
 </p>
 
 </section>
-<section id="slide-org7ba449c">
-<h3 id="org7ba449c">Cost</h3>
+<section id="slide-org3388059">
+<h3 id="org3388059">Cost</h3>
 <p>
 \[J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (y_i - yhat_i)^2\]
 m = number of training examples
 </p>
 
 </section>
-<section id="slide-orgb082bcd">
-<h3 id="orgb082bcd">Vector</h3>
+<section id="slide-orgb7d7a37">
+<h3 id="orgb7d7a37">Vector</h3>
 <p>
 \[\begin{bmatrix}
 1 \\
@@ -132,12 +138,12 @@ m = number of training examples
 </p>
 
 </section>
-<section id="slide-org620261b">
-<h3 id="org620261b">Matrix</h3>
+<section id="slide-orgf91ce40">
+<h3 id="orgf91ce40">Matrix (Latex)</h3>
 <p>
 \[\begin{bmatrix}
 1 & 2 & 9 & 10 & 7 \\
-4 & 3 & 7 & 5  & 9 \\
+4 & 3 & 7 & 5 \\
 5 & 5 & 9 & 11 & 8 \\
 2 & 1 & 1 & 3  & 3 \\
 \end{bmatrix}\]
@@ -146,17 +152,40 @@ m = number of training examples
 </section>
 </section>
 <section>
-<section id="slide-orgd4ab28f">
-<h2 id="orgd4ab28f">Image test</h2>
-<div class="outline-text-2" id="text-orgd4ab28f">
+<section id="slide-org4e64c83">
+<h2 id="org4e64c83">Image test</h2>
+<div class="outline-text-2" id="text-org4e64c83">
 </div>
 </section>
-<section id="slide-orgc3bda80">
-<h3 id="orgc3bda80">svg</h3>
-<img src="./first_test.svg" class="column" style="float:left; width: 35%">
-<img src="./first_test.svg" class="column" style="float:right; width: 35%">
-<img src="./first_test.svg" class="column" style="float:left; width: 35%">
-<img src="./first_test.svg" class="column" style="float:right; width: 35%">
+<section id="slide-org4bcfc25">
+<h3 id="org4bcfc25">svg</h3>
+<img src="./first_test.svg" class="column" style="float:left; width: 45%">
+<img src="./first_test.svg" class="column" style="float:right; width: 45%">
+
+</section>
+</section>
+<section>
+<section id="slide-orgf05d9ba">
+<h2 id="orgf05d9ba">chartjs</h2>
+<div class="outline-text-2" id="text-orgf05d9ba">
+</div>
+</section>
+<section id="slide-org947c705">
+<h3 id="org947c705">Line chart</h3>
+<canvas id="line"></canvas>
+
+</section>
+<section id="slide-orgf5b0f73">
+<h3 id="orgf5b0f73">Scatterplot</h3>
+<canvas id="scatter"></canvas>
+
+</section>
+<section id="slide-org8a9e0e9">
+<h3 id="org8a9e0e9">Line/Scatter-plot</h3>
+<canvas id="line-scatter"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./test.js"></script>
 </section>
 </section>
 </div>
@@ -167,6 +196,7 @@ m = number of training examples
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
+center:false,
 multiplex: {
     secret: '', // null if client
     id: '', // id, obtained from socket.io server
