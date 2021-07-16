@@ -5,5 +5,5 @@
 #+REVEAL_THEME: moon
 
 * Presentations
-** [[https://moritzschwerer.github.io/Presentations/html_test.html][Linear Regression]]
+** [[https://moritzschwerer.github.io/Presentations/linearRegression/html_test.html][Linear Regression]]
 ** [[https://moritzschwerer.github.io/Presentations/notavailable.html][notavailable]]
