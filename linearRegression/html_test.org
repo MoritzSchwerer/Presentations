@@ -61,8 +61,8 @@ m = number of training examples
 
 * Image test
 ** svg
-#+REVEAL_HTML: <img src="./first_test.svg" class="column" style="float:left; width: 45%">
-#+REVEAL_HTML: <img src="./first_test.svg" class="column" style="float:right; width: 45%">
+#+REVEAL_HTML: <img src="./images/first_test.svg" class="column" style="float:left; width: 45%">
+#+REVEAL_HTML: <img src="./images/first_test.svg" class="column" style="float:right; width: 45%">
 
 * chartjs
 ** Line chart
