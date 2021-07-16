@@ -1,0 +1,81 @@
+#+TITLE: Html Test
+#+OPTIONS: tex:t num:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+LATEX_HEADER: \usepackage{alphabeta}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+REVEAL_THEME: moon
+#+REVEAL_INIT_OPTIONS: center:false
+
+* Python
+** Imports
+#+begin_src python
+import numpy
+import some_package
+#+end_src
+
+** Math
+#+begin_src python
+a = 5
+b = 10
+c = a + b # c=15
+#+end_src
+** Loops
+#+begin_src python
+numbers = []
+for i in range(10):
+    numbers.append(i)
+return numbers
+#+end_src
+
+#+RESULTS:
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+
+* Latex
+** Formular
+
+\[y_{hat} = \theta_0 * x_0 + \theta_1 * x_1 ... + \theta_n * x_n\]
+\[y_{hat} = \theta^TX\]
+
+** Cost
+
+\[J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (y_i - yhat_i)^2\]
+m = number of training examples
+
+** Vector
+
+\[\begin{bmatrix}
+1 \\
+2 \\
+3 \\
+4 \\
+\end{bmatrix}\]
+
+** Matrix (Latex)
+
+\[\begin{bmatrix}
+1 & 2 & 9 & 10 & 7 \\
+4 & 3 & 7 & 5 \\
+5 & 5 & 9 & 11 & 8 \\
+2 & 1 & 1 & 3  & 3 \\
+\end{bmatrix}\]
+
+* Image test
+** svg
+#+REVEAL_HTML: <img src="./first_test.svg" class="column" style="float:left; width: 45%">
+#+REVEAL_HTML: <img src="./first_test.svg" class="column" style="float:right; width: 45%">
+
+* chartjs
+** Line chart
+
+#+HTML: <canvas id="line"></canvas>
+
+** Scatterplot
+
+#+HTML: <canvas id="scatter"></canvas>
+
+** Line/Scatter-plot
+
+#+HTML: <canvas id="line-scatter"></canvas>
+
+#+HTML: <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+#+HTML: <script src="./test.js"></script>

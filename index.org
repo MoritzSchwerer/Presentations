@@ -1,0 +1,9 @@
+#+TITLE: Index
+#+OPTIONS: tex:t num:nil toc:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+LATEX_HEADER: \usepackage{alphabeta}
+#+REVEAL_THEME: moon
+
+* Presentations
+** [[https://moritzschwerer.github.io/Presentations/html_test.html][Linear Regression]]
+** [[https://moritzschwerer.github.io/Presentations/notavailable.html][notavailable]]
