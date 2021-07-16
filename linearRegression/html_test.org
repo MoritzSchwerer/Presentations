@@ -1,6 +1,6 @@
 #+TITLE: Html Test
 #+OPTIONS: tex:t num:nil
-#+REVEAL_ROOT: reveal/
+#+REVEAL_ROOT: ../reveal/
 #+LATEX_HEADER: \usepackage{alphabeta}
 #+LATEX_HEADER: \usepackage{amsmath}
 #+REVEAL_THEME: moon
@@ -78,4 +78,4 @@ m = number of training examples
 #+HTML: <canvas id="line-scatter"></canvas>
 
 #+HTML: <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-#+HTML: <script src="./test.js"></script>
+#+HTML: <script src="./js/test.js"></script>
