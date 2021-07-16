@@ -1,6 +1,6 @@
 #+TITLE: Html Test
 #+OPTIONS: tex:t num:nil
-#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_ROOT: reveal/
 #+LATEX_HEADER: \usepackage{alphabeta}
 #+LATEX_HEADER: \usepackage{amsmath}
 #+REVEAL_THEME: moon
