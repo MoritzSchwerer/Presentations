@@ -3,23 +3,22 @@
 #+REVEAL_ROOT: ../reveal/
 #+REVEAL_THEME: moon
 #+REVEAL_INIT_OPTIONS: transition:  'zoom'
-#+REVEAL_HLEVEL: 9
 
 
-** Python
-*** Imports
+* Python
+** Imports
 #+begin_src python
 import numpy
 import some_package
 #+end_src
 
-*** Math
+** Math
 #+begin_src python
 a = 5
 b = 10
 c = a + b # c=15
 #+end_src
-*** Loops
+** Loops
 #+begin_src python
 numbers = []
 for i in range(10):
@@ -30,18 +29,18 @@ return numbers
 #+RESULTS:
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 
-** Latex
-*** Formular
+* Latex
+** Formular
 
 \[y_{hat} = \theta_0 * x_0 + \theta_1 * x_1 ... + \theta_n * x_n\]
 \[y_{hat} = \theta^TX\]
 
-*** Cost
+** Cost
 
 \[J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (y_i - yhat_i)^2\]
 m = number of training examples
 
-*** Vector
+** Vector
 
 \[\begin{bmatrix}
 1 \\
@@ -50,7 +49,7 @@ m = number of training examples
 4 \\
 \end{bmatrix}\]
 
-*** Matrix (Latex)
+** Matrix (Latex)
 
 \[\begin{bmatrix}
 1 & 2 & 9 & 10 & 7 \\
@@ -59,23 +58,31 @@ m = number of training examples
 2 & 1 & 1 & 3  & 3 \\
 \end{bmatrix}\]
 
-** Image test
-*** svg
+* Image test
+** svg
 #+REVEAL_HTML: <img src="./images/first_test.svg" class="column" style="float:left; width: 45%">
 #+REVEAL_HTML: <img src="./images/first_test.svg" class="column" style="float:right; width: 45%">
 
-** chartjs
-*** Line chart
+* chartjs
+** Line chart
 
 #+HTML: <canvas id="line"></canvas>
 
-*** Scatterplot
+** Scatterplot
 
 #+HTML: <canvas id="scatter"></canvas>
 
-*** Line/Scatter-plot
+** Line/Scatter-plot
 
 #+HTML: <canvas id="line-scatter"></canvas>
 
+* Fragments
+
+#+ATTR_REVEAL: :frag (fade-in-then-semi-out)
+   - I will grow.
+   - I will shrink.
+   - I will fade out.
+   - I don't fragment.
+
 #+HTML: <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-#+HTML: <script src="./js/test.js"></script>
+#+HTML: <script src="./js/charts.js"></script>
